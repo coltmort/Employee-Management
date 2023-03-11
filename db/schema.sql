@@ -15,6 +15,7 @@ CREATE TABLE roles(
     salary INT,
     FOREIGN KEY (department_id)
     REFERENCES departments(department_id)
+    ON DELETE CASCADE
 );
 
 CREATE TABLE employees(
@@ -24,6 +25,6 @@ CREATE TABLE employees(
     role INT,
     manager INT,
     is_manager BOOLEAN,
-    FOREIGN KEY (role) REFERENCES roles(role_id),
-    FOREIGN KEY (manager) REFERENCES employees(employee_id)
+    FOREIGN KEY (role) REFERENCES roles(role_id) ON DELETE SET NULL,
+    FOREIGN KEY (manager) REFERENCES employees(employee_id) ON DELETE SET NULL
 );

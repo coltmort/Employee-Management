@@ -26,4 +26,4 @@ After installing and running the CLI simply follow the prompts to update the thi
 
 [github](https://github.com/coltmort/Employee-Management)
 
-[Demo](video link)
+[Demo](https://drive.google.com/file/d/1i6HifPs6ZQOskJkrWWFpi5rO1gNfp2BX/view?usp=share_link)
